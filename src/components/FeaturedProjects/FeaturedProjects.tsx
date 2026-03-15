@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 interface ProjectCardProps {
   icon: string;
   title: string;
@@ -27,15 +25,15 @@ function ProjectCard({ icon, title, description, tags }: ProjectCardProps) {
           </span>
         ))}
       </div>
-      <Link
-        to="/projects"
+      <a
+        href="#projects"
         className="inline-flex items-center text-primary-600 dark:text-primary-400 font-medium hover:text-primary-700 dark:hover:text-primary-300 transition-all duration-200 group-hover:translate-x-1"
       >
         Learn More
         <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
-      </Link>
+      </a>
     </div>
   );
 }

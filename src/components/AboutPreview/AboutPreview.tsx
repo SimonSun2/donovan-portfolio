@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 export default function AboutPreview() {
   return (
     <section id="about-preview" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
@@ -30,15 +28,15 @@ export default function AboutPreview() {
           </p>
           
           <div className="text-center">
-            <Link 
-              to="/about" 
+            <a 
+              href="#about" 
               className="inline-flex items-center text-primary-600 dark:text-primary-400 font-medium hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
             >
               Read More
               <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

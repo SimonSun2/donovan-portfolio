@@ -14,14 +14,14 @@ export default function Hero() {
       <div className="relative max-w-6xl mx-auto text-center z-10">
         {/* Name with glow effect */}
         <div className="mb-6">
-          <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-primary-600 via-accent-500 to-primary-600 bg-clip-text text-transparent animate-gradient-x mb-4">
+          <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-primary-600 via-accent-500 to-primary-600 bg-clip-text text-transparent mb-4">
             Donovan Sun
           </h1>
           <div className="h-1 w-32 mx-auto bg-gradient-to-r from-transparent via-primary-500 to-transparent rounded-full animate-pulse"></div>
         </div>
 
         {/* Title with glass morphism */}
-        <div className="inline-block px-6 py-2 mb-8 rounded-full bg-glass-light dark:bg-glass-dark backdrop-blur-md border border-glass-border shadow-glow">
+        <div className="inline-block px-6 py-2 mb-8 rounded-full bg-white/70 dark:bg-slate-800/80 backdrop-blur-md border border-white/10 shadow-glow">
           <p className="text-xl md:text-2xl font-semibold text-primary-600 dark:text-primary-400">
             Aspiring Mechanical & Racing Engineer
           </p>

@@ -33,7 +33,7 @@ function App() {
         {/* Enhanced Dark Mode Toggle */}
         <button
           onClick={toggleDarkMode}
-          className="fixed top-6 right-6 z-50 p-3 rounded-xl bg-glass-light dark:bg-glass-dark backdrop-blur-md border border-glass-border shadow-glow hover:shadow-glow-lg transition-all duration-300 transform hover:scale-105"
+          className="fixed top-6 right-6 z-50 p-3 rounded-xl bg-white/70 dark:bg-slate-800/80 backdrop-blur-md border border-white/10 shadow-glow hover:shadow-glow-lg transition-all duration-300 transform hover:scale-105"
           aria-label="Toggle dark mode"
         >
           {darkMode ? (
