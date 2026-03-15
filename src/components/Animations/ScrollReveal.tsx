@@ -14,8 +14,9 @@ export default function ScrollReveal({ children, className = '' }: ScrollRevealP
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          if (ref.current) {
-            observer.unobserve(ref.current);
+          const currentRef = ref.current;
+          if (currentRef) {
+            observer.unobserve(currentRef);
           }
         }
       },
@@ -25,13 +26,14 @@ export default function ScrollReveal({ children, className = '' }: ScrollRevealP
       }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
+    const currentRef = ref.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);

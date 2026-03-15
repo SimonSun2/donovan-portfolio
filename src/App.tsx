@@ -8,14 +8,33 @@ import Skills from './pages/Skills';
 import Contact from './pages/Contact';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    }
+    return false;
+  });
 
   useEffect(() => {
-    // Check system preference on mount
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setDarkMode(true);
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const isDarkMode = mediaQuery.matches;
+    
+    if (isDarkMode) {
       document.documentElement.classList.add('dark');
     }
+
+    const handleChange = (e: MediaQueryListEvent) => {
+      if (e.matches) {
+        setDarkMode(true);
+        document.documentElement.classList.add('dark');
+      } else {
+        setDarkMode(false);
+        document.documentElement.classList.remove('dark');
+      }
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
   }, []);
 
   const toggleDarkMode = () => {
