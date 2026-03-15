@@ -1,17 +1,19 @@
-Git Commit Request - Task 2.3: Projects Page
-============================================
+Git Commit Request - Task 2.4: Skills Page
+==========================================
 
-Commit Message: feat: Complete Projects Page with Apex Racing and Three-Body Club
+Commit Message: feat: Complete Skills Page with Technical, Leadership, and Awards sections
 
 Files Changed:
-- src/components/Projects/ProjectsHero/ProjectsHero.tsx (new)
-- src/components/Projects/ProjectsHero/index.ts (new)
-- src/components/Projects/ProjectCard/ProjectCard.tsx (new)
-- src/components/Projects/ProjectCard/index.ts (new)
-- src/components/Projects/ProjectGrid/ProjectGrid.tsx (new)
-- src/components/Projects/ProjectGrid/index.ts (new)
-- src/components/Projects/index.ts (new)
-- src/pages/Projects.tsx (new)
+- src/components/Skills/SkillsHero/SkillsHero.tsx (new)
+- src/components/Skills/SkillsHero/index.ts (new)
+- src/components/Skills/TechnicalSkills/TechnicalSkills.tsx (new)
+- src/components/Skills/TechnicalSkills/index.ts (new)
+- src/components/Skills/LeadershipSkills/LeadershipSkills.tsx (new)
+- src/components/Skills/LeadershipSkills/index.ts (new)
+- src/components/Skills/AwardsSection/AwardsSection.tsx (new)
+- src/components/Skills/AwardsSection/index.ts (new)
+- src/components/Skills/index.ts (new)
+- src/pages/Skills.tsx (new)
 
 Branch: main
 Directory: /root/hiclaw-fs/shared/projects/donovan-portfolio
@@ -19,5 +21,5 @@ Directory: /root/hiclaw-fs/shared/projects/donovan-portfolio
 Commands:
 cd /root/hiclaw-fs/shared/projects/donovan-portfolio
 git add .
-git commit -m "feat: Complete Projects Page with Apex Racing and Three-Body Club"
+git commit -m "feat: Complete Skills Page with Technical, Leadership, and Awards sections"
 git push origin main

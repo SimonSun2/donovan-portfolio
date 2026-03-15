@@ -21,7 +21,7 @@
 |------|------|--------|-------------|----------|
 | 2.1 | Home Page | ✅ | WebDev | P0 |
 | 2.2 | About Page | ✅ | WebDev | P0 |
-| 2.3 | Projects Page | [ ] | WebDev | P0 |
+| 2.3 | Projects Page | ✅ | WebDev | P0 |
 | 2.4 | Skills Page | [ ] | WebDev | P1 |
 | 2.5 | Contact Page | [ ] | WebDev | P1 |
 
