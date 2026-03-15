@@ -9,8 +9,8 @@ interface ProjectCardProps {
 
 function ProjectCard({ icon, title, description, tags }: ProjectCardProps) {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-8 border border-gray-200 dark:border-gray-700">
-      <div className="text-5xl mb-6">{icon}</div>
+    <div className="group bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-200 dark:border-gray-700 hover:border-primary-300 dark:hover:border-primary-700 hover:-translate-y-1">
+      <div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300">{icon}</div>
       <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
         {title}
       </h3>
@@ -21,7 +21,7 @@ function ProjectCard({ icon, title, description, tags }: ProjectCardProps) {
         {tags.map((tag, index) => (
           <span
             key={index}
-            className="px-3 py-1 text-sm bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 rounded-full"
+            className="px-3 py-1 text-sm bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 rounded-full transform group-hover:scale-105 transition-transform duration-200"
           >
             {tag}
           </span>
@@ -29,10 +29,10 @@ function ProjectCard({ icon, title, description, tags }: ProjectCardProps) {
       </div>
       <Link
         to="/projects"
-        className="inline-flex items-center text-primary-600 dark:text-primary-400 font-medium hover:text-primary-700 dark:hover:text-primary-300 transition-colors"
+        className="inline-flex items-center text-primary-600 dark:text-primary-400 font-medium hover:text-primary-700 dark:hover:text-primary-300 transition-all duration-200 group-hover:translate-x-1"
       >
         Learn More
-        <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
       </Link>

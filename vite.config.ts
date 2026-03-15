@@ -7,6 +7,8 @@ export default defineConfig({
   base: '/donovan-portfolio/',
   build: {
     outDir: 'dist',
-    sourcemap: true,
+    sourcemap: false,
+    target: 'esnext',
+    cssMinify: true,
   },
 })
