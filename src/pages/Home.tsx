@@ -1,9 +1,19 @@
-import Hero from '../components/Hero/Hero';
+import Hero from '../components/Hero';
+import AboutPreview from '../components/AboutPreview';
+import FeaturedProjects from '../components/FeaturedProjects';
+import SkillsSnapshot from '../components/SkillsSnapshot';
+import ContactCTA from '../components/ContactCTA';
 
-export default function Home() {
+function Home() {
   return (
-    <div>
+    <>
       <Hero />
-    </div>
+      <AboutPreview />
+      <FeaturedProjects />
+      <SkillsSnapshot />
+      <ContactCTA />
+    </>
   );
 }
+
+export default Home;
