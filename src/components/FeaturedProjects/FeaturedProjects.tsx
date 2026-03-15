@@ -7,7 +7,7 @@ interface ProjectCardProps {
   tags: string[];
 }
 
-function ProjectCard({ icon, title, description, tags, link }: ProjectCardProps) {
+function ProjectCard({ icon, title, description, tags }: ProjectCardProps) {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-8 border border-gray-200 dark:border-gray-700">
       <div className="text-5xl mb-6">{icon}</div>
@@ -47,14 +47,12 @@ export default function FeaturedProjects() {
       title: 'Apex Racing - Founder & Captain',
       description: 'Leading a competitive F1 in Schools team, designing miniature F1 cars using CAD software, applying aerodynamics and manufacturing principles.',
       tags: ['Engineering', 'Leadership', 'CAD', 'Competition'],
-      link: '/projects#apex-racing'
     },
     {
       icon: '🌌',
       title: 'Three-Body Club - President',
       description: 'Founding and leading a science community inspired by Liu Cixin\'s trilogy, organizing discussions, events, and outreach activities.',
       tags: ['Leadership', 'Science', 'Community', 'Outreach'],
-      link: '/projects#three-body-club'
     }
   ];
 

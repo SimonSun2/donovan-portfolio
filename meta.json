@@ -1,0 +1,14 @@
+{
+  "project_id": "donovan-portfolio",
+  "title": "Donovan Portfolio Website",
+  "description": "留学申请个人网站 - 展示孙希涵 (Donovan Sun) 的学术背景、项目经历和技能",
+  "status": "active",
+  "created_at": "2026-03-15T02:23:00Z",
+  "updated_at": "2026-03-15T10:10:00Z",
+  "phase": 2,
+  "total_phases": 4,
+  "project_room_id": "!HnZDDpwf905WxzyhDs:matrix-local.hiclaw.io:18080",
+  "workers": ["WebDev"],
+  "github_repo": "SimonSun2/donovan-portfolio",
+  "github_pages_url": "https://simonsun2.github.io/donovan-portfolio/"
+}

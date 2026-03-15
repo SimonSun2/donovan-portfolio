@@ -1,0 +1,23 @@
+Git Commit Request - Task 2.3: Projects Page
+============================================
+
+Commit Message: feat: Complete Projects Page with Apex Racing and Three-Body Club
+
+Files Changed:
+- src/components/Projects/ProjectsHero/ProjectsHero.tsx (new)
+- src/components/Projects/ProjectsHero/index.ts (new)
+- src/components/Projects/ProjectCard/ProjectCard.tsx (new)
+- src/components/Projects/ProjectCard/index.ts (new)
+- src/components/Projects/ProjectGrid/ProjectGrid.tsx (new)
+- src/components/Projects/ProjectGrid/index.ts (new)
+- src/components/Projects/index.ts (new)
+- src/pages/Projects.tsx (new)
+
+Branch: main
+Directory: /root/hiclaw-fs/shared/projects/donovan-portfolio
+
+Commands:
+cd /root/hiclaw-fs/shared/projects/donovan-portfolio
+git add .
+git commit -m "feat: Complete Projects Page with Apex Racing and Three-Body Club"
+git push origin main
